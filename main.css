@@ -5,29 +5,25 @@
 }
 
 body {
-    background-image: url("images/carbon-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center, center;
-    background-attachment: fixed;
+    background-color: rgb(29, 29, 29);
 }
 
 header {
     padding-bottom: 30px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 h1 {
     color: #C5EFF7;
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
-    line-height: 70px;
-    height: 150px;
-    width: 800px;
+    line-height: 50px;
+    height: 100px;
+    width: 500px;
     margin: auto;
     background-image: url("images/headlights.jpg");
-    background-size: 800px 150px;
+    background-size: 500px 100px;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 50px 10px #C5EFF7;
     border-radius: 20%;
@@ -40,13 +36,13 @@ h1 {
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    line-height: 70px;
+    width: 400px;
+    height: 55px;
+    line-height: 50px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 25px;
-    width: 750px;
-    height: 75px;
+    font-size: 15px;
 }
 
 main {
@@ -57,13 +53,13 @@ main {
 form {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    width: 100%;
     background-color: rgb(73, 73, 73);
     margin-top: 20px;
 }
 
 fieldset {
-    padding: 50px;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
@@ -71,15 +67,14 @@ fieldset {
 p {
     color: rgb(144, 229, 255);
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 15px;
     text-align: center;
 }
 
 .new-options {
     color: white;
-    font-size: 25px;
-    padding-top: 5px;
+    font-size: 15px;
+    padding-top: 10px;
     margin-left: 50px;
     text-shadow: 5px 1px 10px rgb(0, 0, 0);
 }
@@ -92,22 +87,14 @@ button {
     border: 2px solid black;
     border-radius: 10px;
     width: 150px;
-    height: 80px;
-    font-size: 25px;
+    height: 50px;
+    font-size: 20px;
     font-weight: 700;
     color: blue;
 }
 
-button:hover {
-    background-color: green;
-    color: white;
-    transition: 0.3s;
-    border: 2px solid white;
-    box-shadow: 1px 1px 50px 10px #C5EFF7;
-}
-
 .answer-image {
-    width: 550px;
+    width: 250px;
     box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
@@ -116,7 +103,7 @@ button:hover {
 .right-answer-text {
     color: rgb(0, 204, 0);
     text-shadow: 5px 1px 10px rgb(0, 0, 0);
-    font-size: 75px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
@@ -125,11 +112,16 @@ button:hover {
 .wrong-answer-text {
     color: rgb(221, 0, 0);
     text-shadow: 5px 1px 10px rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.correction {
+    color: white;
+    font-size: 25px;
 }
 
 .answer-info {
@@ -146,11 +138,119 @@ button:hover {
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 50px;
-    font-weight: bold;
 }
 
-.correction {
-    color: white;
-    font-size: 40px;
+.result-text {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        color: #C5EFF7;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 70px;
+        height: 150px;
+        width: 800px;
+        margin: auto;
+        background-image: url("images/headlights.jpg");
+        background-size: 800px 150px;
+        background-repeat: no-repeat;
+        box-shadow: 1px 1px 50px 10px #C5EFF7;
+        border-radius: 20%;
+    }
+    .quest-score {
+        background-color: rgb(73, 73, 73);
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        width: 750px;
+        height: 75px;
+        line-height: 70px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 800px;
+        background-color: rgb(73, 73, 73);
+        margin-top: 20px;
+    }
+    fieldset {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: rgb(144, 229, 255);
+        text-shadow: 1px 1px 3px rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .new-options {
+        color: white;
+        font-size: 25px;
+        padding-top: 10px;
+        margin-left: 50px;
+        text-shadow: 5px 1px 10px rgb(0, 0, 0);
+    }
+    button {
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 150px;
+        height: 80px;
+        font-size: 25px;
+        font-weight: 700;
+        color: blue;
+    }
+    button:hover {
+        background-color: green;
+        color: white;
+        transition: 0.3s;
+        border: 2px solid white;
+        box-shadow: 1px 1px 50px 10px #C5EFF7;
+        cursor: pointer;
+    }
+    .answer-image {
+        width: 550px;
+        box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right-answer-text {
+        color: rgb(0, 204, 0);
+        text-shadow: 5px 1px 10px rgb(0, 0, 0);
+        font-size: 75px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .wrong-answer-text {
+        color: rgb(221, 0, 0);
+        text-shadow: 5px 1px 10px rgb(0, 0, 0);
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .correction {
+        color: white;
+        font-size: 40px;
+    }
+    .result-text {
+        font-size: 50px;
+    }
 }

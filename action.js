@@ -90,9 +90,9 @@ function goToNextQuestion() {
 function showResults() {
     $(".quest-score").hide();
     $("fieldset").hide();
-    let resultsPage = $(`<div class="results"><p>Final Result</p>
-    <p>Your Score Is...</p>
-    <p>${currentScore}/${STORE.length}</p>
+    let resultsPage = $(`<div class="results"><p class="result-text">Final Result</p>
+    <p class="result-text">Your Score Is...</p>
+    <p class="result-text">${currentScore}/${STORE.length}</p>
     <button type="button" class="restart-button">Restart Quiz</button>
     </div>`);
     $("form").html(resultsPage);
