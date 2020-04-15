@@ -25,9 +25,9 @@ function updateCurrentScoreNumber() {
 function nextOptions() {
     let choices = STORE[currentQuestion].options;
     for (i=0; i<choices.length; i++) {
-        $(".options").append(`<label for="option${i+1}"><input type="radio" name="options"
+        $(".options").append(`<div class="new-options"><label for="option${i+1}" class="answer-choices"><input type="radio" name="options"
         id="option${i+1}" class="optionChosen" value="${choices[i]}" required>
-        ${choices[i]}</label><br>`);
+        ${choices[i]}</label></div>`);
     };
 }
 
@@ -58,9 +58,15 @@ function submitAnswer() {
         let correctAnswer = STORE[currentQuestion].answer;
         if (chosen === correctAnswer) {
             updateCurrentScoreNumber();
-            $(".question-field").append("Correct!");
+            $(".question-field").append(`<h3 class="right-answer-text">Correct!</h3>
+                                        <p class="answer-info">${STORE[currentQuestion].info}</p>
+                                        <p class="answer-info">${STORE[currentQuestion].image}</p>`);
         } else if (chosen != correctAnswer) {
-            $(".question-field").append("Wrong!");
+            $(".question-field").append(`<h3 class="wrong-answer-text">Wrong! <br>
+                                         The correct answer is...</h3>
+                                        <p class="correction">${STORE[currentQuestion].answer}</p>
+                                        <p class="answer-info">${STORE[currentQuestion].info}</p>
+                                        <p class="answer-info">${STORE[currentQuestion].image}</p>`);
         } else {
             alert("Must choose an option!");
         };
@@ -82,6 +88,7 @@ function goToNextQuestion() {
 
 //Function for the Results Page and Restart Button
 function showResults() {
+    $(".quest-score").hide();
     $("fieldset").hide();
     let resultsPage = $(`<div class="results"><p>Final Result</p>
     <p>Your Score Is...</p>
@@ -100,14 +107,14 @@ function restartQuiz() {
     });
 }
 
-
 console.log(STORE);
 console.log(STORE.length);
 console.log(STORE[currentQuestion]);
 console.log(STORE[currentQuestion].question);
 console.log(STORE[currentQuestion].options);
 console.log(STORE[currentQuestion].answer);
-
+console.log(STORE[currentQuestion].info);
+//Call all functions that are not already called
 startQuiz();
 submitAnswer();
 goToNextQuestion();

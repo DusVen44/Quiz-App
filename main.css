@@ -1,17 +1,52 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Cardo', serif;
+}
+
+body {
+    background-image: url("images/carbon-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    background-attachment: fixed;
 }
 
 header {
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+
+h1 {
+    color: #C5EFF7;
+    font-size: 60px;
+    font-weight: 500;
     text-align: center;
-    padding: 20px;
+    line-height: 70px;
+    height: 150px;
+    width: 800px;
+    margin: auto;
+    background-image: url("images/headlights.jpg");
+    background-size: 800px 150px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 50px 10px #C5EFF7;
+    border-radius: 20%;
 }
 
 .quest-score {
+    background-color: rgb(73, 73, 73);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    line-height: 70px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    width: 750px;
+    height: 75px;
 }
 
 main {
@@ -20,7 +55,11 @@ main {
 }
 
 form {
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    background-color: rgb(73, 73, 73);
+    margin-top: 20px;
 }
 
 fieldset {
@@ -29,8 +68,89 @@ fieldset {
     justify-content: center;
 }
 
+p {
+    color: rgb(144, 229, 255);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.new-options {
+    color: white;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-left: 50px;
+    text-shadow: 5px 1px 10px rgb(0, 0, 0);
+}
+
 button {
     margin-left:auto;
     margin-right: auto;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 700;
+    color: blue;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+    border: 2px solid white;
+    box-shadow: 1px 1px 50px 10px #C5EFF7;
+}
+
+.answer-image {
+    width: 550px;
+    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-answer-text {
+    color: rgb(0, 204, 0);
+    text-shadow: 5px 1px 10px rgb(0, 0, 0);
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.wrong-answer-text {
+    color: rgb(221, 0, 0);
+    text-shadow: 5px 1px 10px rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.answer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.correction {
+    color: white;
+    font-size: 40px;
 }
