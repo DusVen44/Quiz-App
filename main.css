@@ -119,7 +119,7 @@ button:hover {
     font-size: 75px;
     font-weight: bold;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .wrong-answer-text {
@@ -128,7 +128,7 @@ button:hover {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
