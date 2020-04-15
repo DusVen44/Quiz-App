@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang = "en">
-
-<head>
+  <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Exotic Car Quiz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-</head>
+  </head>
 
 <body>
 <!--Title of Page with Question and Score counters-->
@@ -16,65 +15,27 @@
             <h1>Do You Know Exotic Cars?</h1>
         </div>
         <div class="quest-score">
-            <h2>Current Question: 0/5</h2>
-            <h2>Current Score: 0</h2>
+            <h2 class="question-number">Current Question: 0/5</h2>
+            <h2 class="score-number">Current Score: 0</h2>
         </div>
     </header>
 <!--Intro text and Start Button-->
     <main>
-        <form>
-            <fieldset>
+        <form class="form">
+            <fieldset class="start-page">
                 <p>How well do you know exotic cars? This quiz will test your knowledge of the world's rarest and most extreme production cars.
                 </p>
-                <button class="button start-button">Start Quiz!
+                <button class="button start-button" type="button">Start Quiz!
                 </button>
             </fieldset>
         </form>
-<!--Question page - Include Header on all pages below-->
-    <form>
-        <fieldset>
-            <p>Here will be a question generated from the STORE</p>
-            <label for="options">
-            <input type="radio" name="options">4 options will be generated from the STORE
-            </label>
-            <button class="button submit-answer-button">Submit Answer</button>
-        </fieldset>
-    </form>
-<!--If user gets right answer...-->
-    <form>
-        <fieldset>
-            <p>Correct!</p>
-            <!--Insert image of car pertaining to question-->
-            <button class="button next-question-button">Next Question</button>
-        </fieldset>
-    </form>
-<!--If user gets wrong answer...-->
-    <form>
-        <fieldset>
-            <p>Wrong! The correct answer is...</p>
-            <p>Here will be the correct answer.</p>
-            <!--Insert image of car pertaining to question-->
-            <button class="button next-question-button">Next Question</button>
-        </fieldset>
-    </form>
-<!--Finish Page-->
-    <form>
-        <fieldset>
-            <p>You've finished the quiz. Your final score is...</p>
-            <p>Here will be the final score</p>
-            <button class="button restart-button">Restart Quiz</button>
-        </fieldset>
-    </form>
-    </main>
 
-
-
-
-    <script src = "https://code.jquery.com/jquery-3.4.1.js"
-     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-     crossorigin="anonymous"></script>
-    <script src = "store.js"></script>
-    <script src = "script.js"></script>    
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.js" 
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+    crossorigin="anonymous"></script>
+    <script src="store.js"></script>
+    <script src="action.js"></script>    
 </body>
 
 </html>
