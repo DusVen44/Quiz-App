@@ -42,12 +42,15 @@ h1 {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    height: 55px;
+    height: fit-content;
     line-height: 50px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
+}
+
+h2 {
+    font-size: smaller;
 }
 
 form {
@@ -85,17 +88,16 @@ p {
 }
 
 button {
+    background-color: white;
     margin-left:auto;
     margin-right: auto;
     margin-top: 20px;
     padding: 5px;
-    border: 2px solid black;
     border-radius: 10px;
     width: 20%;
     font-size: 20px;
     font-weight: bold;
     color: blue;
-    background-color: white;
 }
 
 .answer-image {
@@ -184,7 +186,9 @@ button {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 25px;
+    }
+    h2 {
+        font-size: 30px;
     }
     form {
         width: 90%;
