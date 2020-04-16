@@ -25,9 +25,9 @@ function updateCurrentScoreNumber() {
 function nextOptions() {
     let choices = STORE[currentQuestion].options;
     for (i=0; i<choices.length; i++) {
-        $(".options").append(`<div class="new-options"><label for="option${i+1}" class="answer-choices"><input type="radio" name="options"
+        $(".options").append(`<section class="new-options"><label for="option${i+1}" class="answer-choices"><input type="radio" name="options"
         id="option${i+1}" class="optionChosen" value="${choices[i]}" required>
-        ${choices[i]}</label></div>`);
+        ${choices[i]}</label></section>`);
     };
 }
 
@@ -36,7 +36,7 @@ function nextQuestion() {
     let question = STORE[currentQuestion].question;
     let newQuestionHtml = $(`<fieldset class="question-field">
     <p>${question}</p>
-    <div class="options"></div>
+    <section class="options"></section>
     <button class="answer-button" type="submit">Submit Answer
     </button>
     <button class="next-button" type="button">Next >>
@@ -90,11 +90,11 @@ function goToNextQuestion() {
 function showResults() {
     $(".quest-score").hide();
     $("fieldset").hide();
-    let resultsPage = $(`<div class="results"><p class="result-text">Final Result</p>
+    let resultsPage = $(`<section class="results"><p class="result-text">Final Result</p>
     <p class="result-text">Your Score Is...</p>
     <p class="result-text">${currentScore}/${STORE.length}</p>
     <button type="button" class="restart-button">Restart Quiz</button>
-    </div>`);
+    </section>`);
     $("form").html(resultsPage);
     currentQuestion = 0
     $("h2").hide();
@@ -107,13 +107,6 @@ function restartQuiz() {
     });
 }
 
-console.log(STORE);
-console.log(STORE.length);
-console.log(STORE[currentQuestion]);
-console.log(STORE[currentQuestion].question);
-console.log(STORE[currentQuestion].options);
-console.log(STORE[currentQuestion].answer);
-console.log(STORE[currentQuestion].info);
 //Call all functions that are not already called
 startQuiz();
 submitAnswer();

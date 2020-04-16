@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     font-family: 'Cardo', serif;
+    margin: 0;
 }
 
 body {
@@ -19,12 +19,17 @@ h1 {
     font-weight: bold;
     text-align: center;
     line-height: 50px;
-    height: 100px;
-    width: 500px;
     margin: auto;
+}
+
+.quiz-title {
+    height: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("images/headlights.jpg");
-    background-size: 500px 100px;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     box-shadow: 1px 1px 50px 10px #C5EFF7;
     border-radius: 20%;
 }
@@ -36,7 +41,7 @@ h1 {
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-    width: 400px;
+    width: 90%;
     height: 55px;
     line-height: 50px;
     margin-top: 50px;
@@ -45,22 +50,22 @@ h1 {
     font-size: 15px;
 }
 
-main {
-    width: 70%;
-    margin: auto;
-}
-
 form {
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    background-color: rgb(73, 73, 73);
-    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 90%;
+    height: fit-content;
 }
 
 fieldset {
-    padding: 15px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -86,15 +91,14 @@ button {
     padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
-    width: 150px;
-    height: 50px;
+    width: 20%;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     color: blue;
 }
 
 .answer-image {
-    width: 250px;
+    width: 50%;
     box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
@@ -128,7 +132,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -151,12 +155,17 @@ button {
         font-weight: 500;
         text-align: center;
         line-height: 70px;
-        height: 150px;
-        width: 800px;
         margin: auto;
+    }
+    .quiz-title {
+        height: 150px;
+        width: 80%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
         background-image: url("images/headlights.jpg");
-        background-size: 800px 150px;
         background-repeat: no-repeat;
+        background-size: 100% 100%;
         box-shadow: 1px 1px 50px 10px #C5EFF7;
         border-radius: 20%;
     }
@@ -167,7 +176,8 @@ button {
         border-radius: 20px;
         display: flex;
         justify-content: space-around;
-        width: 750px;
+        width: 80%;
+        max-width: 900px;
         height: 75px;
         line-height: 70px;
         margin-top: 50px;
@@ -176,12 +186,14 @@ button {
         font-size: 25px;
     }
     form {
-        margin-left: auto;
-        margin-right: auto;
         width: 90%;
         max-width: 800px;
         background-color: rgb(73, 73, 73);
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        height: fit-content;
     }
     fieldset {
         padding: 40px;
@@ -191,7 +203,7 @@ button {
     p {
         color: rgb(144, 229, 255);
         text-shadow: 1px 1px 3px rgb(0, 0, 0);
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 300;
         text-align: center;
     }
@@ -224,7 +236,7 @@ button {
         cursor: pointer;
     }
     .answer-image {
-        width: 550px;
+        width: 80%;
         box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
         margin-left: auto;
         margin-right: auto;
