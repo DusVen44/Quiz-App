@@ -4,10 +4,10 @@ const STORE = [
         options: [
             "Koenigsegg Agera RS",
             "McLaren F1",
-            "Buggati Chiron Super Sport",
+            "Bugatti Chiron Super Sport",
             "Hennessey Venom GT"
         ],
-        answer: "Buggati Chiron Super Sport",
+        answer: "Bugatti Chiron Super Sport",
         info: "On August 2, 2019 the Buggati Chiron Super Sport hit a world record 305 mph.",
         image: '<img src="images/chironss.jpg" class="answer-image" alt="Buggati Chiron SS"></img>'
     },
@@ -77,7 +77,7 @@ const STORE = [
             "Rolls-Royce",
             "Bentley",   
             "Mercedes-Maybach",
-            "Rang Rover"
+            "Range Rover"
             ],
         answer: "Rolls-Royce",
         info: "If you want it to match the pattern above your home, it'll cost extra.",
